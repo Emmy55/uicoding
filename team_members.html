@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .team{
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 400px 400px;
+        }
+        .cool {
+            background-color: green;
+            border-radius: 60px 60px 0px 0px;
+
+        }
+        .one {
+            grid-column:1/2 ;
+            grid-row:1/2 ;
+        }
+        .two {
+            grid-column:2/3 ;
+            grid-row:1/2 ;
+        }
+        .three {
+            grid-column:3/4 ;
+            grid-row: 1/2;
+        }
+        .four {
+            grid-column:1/2 ;
+            grid-row: 2/3;
+        }
+        .five {
+            grid-column:2/3 ;
+            grid-row: 2/3;
+        }
+        .six {
+            grid-column:3/4 ;
+            grid-row:2/3 ;
+        }
+        .up {
+            background-color: white;
+            width: 99%;
+            height: 170px;
+            border-radius: 60px 60px 0px 0px;
+            position: relative;
+            left: 2px;
+            bottom: 239px;
+        }
+        .rup {
+            background-color: rgb(255, 255, 255);
+            width: 99%;
+            height: 170px;
+            border-radius: 60px 60px 0px 0px;
+            position: relative;
+            left: 2px;
+            bottom: 239px;
+        }
+        .img {
+            position: relative;
+            left: 90px;
+            top: 20px;
+            z-index: 1;
+            width: 230px;
+            height: 230px;
+            border: 5px solid rgba(49, 229, 17, 0.476);
+            background-color: rgb(255, 255, 255);
+            border-radius: 100%;
+        }
+        .first {
+            width: 420px;
+            background-color: green;
+            height: 400px;
+            left: 450px;
+            position: relative;
+            border-radius: 60px 60px 0px 0px;
+        }
+        img {
+            border-radius: 100%;
+        }
+        .ifeanyi{
+            background-image: url(ifeanyi.png);
+            background-size: contain;
+            /* background-repeat: no-repeat; */
+
+        }
+        .smart {
+            background-image: url(smart.png);
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="img smart">
+            
+        </div>
+        <div class="rup"></div>
+        <h1>Johnson Adura</h1>
+        <h6>Full Stack Developer</h6>
+        <p></p>
+    </div>
+    <div class="team">
+        <div class="one cool">
+            <div class="img emma">
+
+        </div><div class="up"></div></div>
+        <div class="two cool">
+            <div class="img ifeanyi">
+            
+        </div><div class="up"></div></div>
+        <div class="three cool">
+            <div class="img">
+
+        </div><div class="up"></div></div>
+        <div class="four cool">
+            <div class="img">
+
+        </div><div class="up"></div></div>
+        <div class="five cool">
+            <div class="img">
+
+        </div><div class="up"></div></div>
+        <div class="six cool">
+            <div class="img">
+
+        </div><div class="up"></div></div>
+    </div>
+</body>
+</html>

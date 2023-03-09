@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            margin: 0;
+        }
+        .big {
+            height: 92vh;
+            width: 100%;
+            position: relative;
+            top: -40px;
+            z-index: 1;
+            background-color:#7FC9BC ;
+        }
+        nav {
+            position: relative;
+            top: -30px;
+            height: 100px;
+        }
+        h1 {
+            color: #1C385F;
+            font-size: 45px;
+            font-weight: bold;
+        }
+        li {
+            display:inline;
+            padding: 40px;
+            font-weight: 550;
+            top: 17px;
+            position: relative;
+            left: 290px;
+        }
+        .text > button {
+            background-color: #FB5F49;
+            border: none;
+            height: 40px;
+            color: white;
+            width: 130px;
+            position: relative;
+            top: 10px;
+            
+        }
+        nav > button {
+            background-color: #FB5F49;
+            border: none;
+            height: 40px;
+            width: 120px;
+            position: relative;
+            left: 1200px;
+            color: white;
+            top: -12px;
+        }
+        .text{
+            position: relative;
+            padding: 60px;
+            top: 80px;
+        }
+       
+        img {
+            left: 720px;
+            position: relative;
+            top: -245px;
+            overflow-x: hidden;
+            
+        }
+        .text > p {
+            padding-bottom: 10px;
+        }
+        .words > h1 {
+            color: #1C385F;
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .words {
+            text-align: center;
+        }
+        .next {
+            position: relative;
+            top: 120px;
+            height: 890px;
+            width: 100%;
+            background-color: #f8cec91a;
+        }
+        /* .words > #para {
+            position: relative;
+            left:-120px;
+            top:30px;
+        } */
+        .foot{
+            height: 700px;
+            width: 100%;
+            /* background-color: blue; */
+        }
+        .wrd > h4{
+            color: #1C385F;
+            font-size: 45px;
+            font-weight: bold;
+            align-items: center;
+            text-align: center;
+        }
+        .wrd > p {
+            text-align: center;
+            position: relative;
+            /* top: -50px; */
+        }
+        .all {
+            display: flex;
+            position: relative;
+            top: 140px;
+            padding-left: 50px;
+        }
+        .watch {
+            align-items: center;
+            position: relative;
+            left: 330px;
+            top: -375px;
+        }
+        #one {
+            position: relative;
+            left: 120px;
+            width: 300px;
+
+        }
+        #two {
+            position: relative;
+            left: 120px;
+            top: 50px;
+            width: 300px;
+
+        }
+        #three {
+            position: relative;
+            left: 920px;
+            width: 300px;
+            top: -700px;
+        }
+        #four {
+            position: relative;
+            left: 920px;
+            width: 300px;
+            top: -660px;
+        }
+        #not {
+            position: relative;
+            top: 60px;
+            /* right: -420px; */
+           
+            left: 20px;
+        }
+        .one {
+            text-align: center;
+            width: 300px;
+            position: relative;
+            left: 19px;
+        }
+        .two {
+            position: relative;
+            left: 140px;
+            text-align: center;
+            width: 300px;
+        }
+        .three {
+            position: relative;
+            left: 250px;
+            text-align: center;
+            width: 300px;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            left: 63px;
+            top: 40px;
+            width: 250px;
+        }
+        .logo > span {
+            color: #FB5F49;
+        }
+        @media screen and (max-width:600px) {
+            .wrd h4 {
+                position: relative;
+                /* top: 120px; */
+            }
+            body {
+                overflow-x: hidden;
+                /* overflow-y: hidden; */
+            }
+            nav{
+                display: none;
+            }
+            .img {
+                position: relative;
+                left: -881px;
+                top: -100px;
+                z-index:-1;
+            }
+           
+            h1,h4 {
+            color: #001dd7;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .two > .des {
+            left: -40px;
+            position: relative;
+        }
+        .des > h3 {
+            width: 154px;
+        }
+        .three > .des {
+            left: -34px;
+            /* top:180px; */
+            position: relative;
+        }
+        .watch{
+            position: relative;
+            left: 0px;
+            top: 50px;
+            width: 410px;
+        }
+        #three, #four{
+            position: relative;
+            left: 120px;
+            top: 40px;
+        }
+        #four {
+            position: relative;
+            top: 70px;
+        }
+        .three{
+            position: relative;
+            left: 110px;
+        }
+        .one, .two, .three, .four {
+        width: 150px;
+    }
+    .two {
+        display: none;
+    }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Watch <span>Sales</span>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Projects</li>
+            <li>F&Q</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+        <button>Shop Now</button>
+    </nav>
+    <div class="big">
+        <div class="text">
+            <h1>Best Fashionable Digital Watch.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <br> <br> Veritatis laboriosam voluptatum aperiam rerum eumvores
+            <br><br> luptatem est asperiores, ex sit ipsa alias, quia optio aut error
+            </p>
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="img">
+            <img src="watchpoint.png" alt="">
+        </div>
+    </div>
+    <div class="next">
+        <div class="words">
+            <h1>Awesome Digital Watch Can <br> 
+            Make Your Life Easier</h1>
+            <span id="para">Lorem, ipsum dolor sit amet consectetur adipisicing
+             elit. Quas odio repudiandae illum <br> loribus doloremque
+              ipsa  totam blanditiis quod eligendi incidunt!</span>
+        </div>
+        <div class="all">
+            <div class="one">
+                <i class="fa-regular fa-gem"></i>
+
+                <div class="des">
+                    <h3>Attractive Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Omnis doloremque, animi reprehenderit veniam quas
+                        natus?</p>
+                </div>
+            </div>
+            <div class="two">
+                 <i class="fa-light fa-cube"></i> 
+
+                <div class="des">
+                    <h3>User Friendly</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Omnis doloremque, animi reprehenderit veniam quas
+                    natus?</p>
+                </div>
+            </div>
+            <div class="three">
+
+                <i class="fa-sharp fa-solid fa-shield-check"></i>
+                <div class="des">
+                    <h3>Lifetime Guard</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Omnis doloremque, animi reprehenderit veniam quas
+                    natus?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="wrd">
+            <h4>The Watch Has Lots Of <br> Excellent Features</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Veritatis eum dolore, itaque autem nihil 
+                accusamus! <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, officia.lorem</p>
+        </div>
+        <img id="not" width="40px" src="not.png" alt="">
+        <h3 id="one">Notification Alert</h3>
+        <p id="one">Lorem ipsum dolor sit, ametsam  <br><br> consectetur adipisicing elit. At laud   <br><br> antium deleniti maioresquibus <br> <br> dam ullam officia magni </p>
+
+        <h3 id="two">Instant Video Call</h3>
+        <p id="two">Lorem ipsum dolor sit, ametsam   <br><br> consectetur adipisicing elit. At laud  <br> <br> antium deleniti maioresquibus <br> <br> dam ullam officia magni </p>
+
+        <img class="watch" src="watch.png" alt="">
+
+        <h3 id="three">User Live Chat</h3>
+        <p id="three">Lorem ipsum dolor sit, ametsam  <br><br> consectetur adipisicing elit. At laud   <br><br> antium deleniti maioresquibus <br> <br> dam ullam officia magni </p>
+
+        <h3 id="four">Install Any App</h3>
+        <p id="four">Lorem ipsum dolor sit, ametsam   <br><br> consectetur adipisicing elit. At laud   <br><br> antium deleniti maioresquibus <br> <br> dam ullam officia magni </p>
+    </div>
+    <script src="https://kit.fontawesome.com/9da17deac8.js" crossorigin="anonymous"></script>
+</body>
+</html>
