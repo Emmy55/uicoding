@@ -93,6 +93,11 @@
             /* height: max-content; */
         }
     @media screen and (max-width:600px) {
+        
+        #smt{
+            position: relative;
+            left: 90px;
+        }
         .container{
             width: 100%;
         }
@@ -116,6 +121,7 @@
         }
         .wrapper .container .hero-section .gallery .caption {
             opacity: 1;
+            
         }
         #width1 {
             opacity: 1;
@@ -172,7 +178,7 @@
             bottom: -87px;
             left: 0px;
             font-size: 13px;
-            width:70px;
+            width:50%;
         }
        
             .wrapper .container .hero-section .gallery .caption {
@@ -213,8 +219,8 @@
             grid-column:1/3;
             grid-row:1/2 ;
             position: relative;
-            /* overflow-x: hidden; */
-            left: 90px;
+            overflow: hidden;
+            /* left: 90px; */
             width:0px;
         }
         .two{
@@ -259,9 +265,19 @@
                 width: 0px;
             }
             
-        
+            div.gallery.one {
+            overflow-x: hidden;
         }
-       
+        .wrapper .container .move .one .caption {
+            position: absolute;
+            left: 90px;
+        }
+        .wrapper .container .move .one .caption:hover {
+            position: absolute;
+            left: 90px;
+        }
+        }
+        
         @media screen and (max-width:900px) and (min-width:600px) {
             .wrapper .container .hero-section .gallery .caption {
             width: 80%;
@@ -334,6 +350,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 10px;
         }
+        
     }
   
     </style>
@@ -344,7 +361,7 @@
             <div class="hero-section move">
                 <div class="gallery one">
                     <div class="image-section">
-                        <img src="smart.png" alt="">
+                        <img id="smt" src="smart.png" alt="">
                     </div>
                     <div class="caption" id="width">
                         <h2 id="john">Johnson Adura </h2>
