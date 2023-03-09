@@ -10,8 +10,11 @@
             font-family: sans-serif;
             margin: 0;
         }
+        .text {
+            width: 30%;
+        }
         .big {
-            height: 92vh;
+            height: 85.8vh;
             width: 100%;
             position: relative;
             top: -40px;
@@ -41,7 +44,7 @@
             border: none;
             height: 40px;
             color: white;
-            width: 130px;
+            width: 40%;
             position: relative;
             top: 10px;
             
@@ -50,7 +53,7 @@
             background-color: #FB5F49;
             border: none;
             height: 40px;
-            width: 120px;
+            width: 10%;
             position: relative;
             left: 1200px;
             color: white;
@@ -86,7 +89,7 @@
             top: 120px;
             height: 890px;
             width: 100%;
-            background-color: #f8cec91a;
+            background-color: #cab0ad1b;
         }
         /* .words > #para {
             position: relative;
@@ -125,26 +128,26 @@
         #one {
             position: relative;
             left: 120px;
-            width: 300px;
+            width: 90%;
 
         }
         #two {
             position: relative;
             left: 120px;
             top: 50px;
-            width: 300px;
+            width: 30%;
 
         }
         #three {
             position: relative;
             left: 920px;
-            width: 300px;
+            width:30%;
             top: -700px;
         }
         #four {
             position: relative;
             left: 920px;
-            width: 300px;
+            width: 30%;
             top: -660px;
         }
         #not {
@@ -156,7 +159,7 @@
         }
         .one {
             text-align: center;
-            width: 300px;
+            width: 25%;
             position: relative;
             left: 19px;
         }
@@ -164,13 +167,13 @@
             position: relative;
             left: 140px;
             text-align: center;
-            width: 300px;
+            width: 25%;
         }
         .three {
             position: relative;
             left: 250px;
             text-align: center;
-            width: 300px;
+            width: 25%;
         }
         .logo {
             font-size: 30px;
@@ -178,18 +181,59 @@
             position: relative;
             left: 63px;
             top: 40px;
-            width: 250px;
+            width: 25%;
         }
         .logo > span {
             color: #FB5F49;
         }
-        @media screen and (max-width:600px) {
-            .wrd h4 {
+        .burger {
+            display: none;
+        }
+@media screen and (max-width:600px) {
+    *{
+        margin: 0;
+    }
+   
+    .big {
+            height: 85.8vh;
+            width: 93%;
+            /* margin-left: 10; */
+            position: relative;
+            top: -40px;
+            z-index: 1;
+            background-color:#7fc9bbb5 ;
+        }
+        p#one, P#three, p#four, p#five {
+            width: 60%;
+        }
+             #three, #four {
+                position: relative;
+                left: 130px;
+                width: 50%;
+            }
+            #one, #two {
+                width: 50%;
+                left: 140px;
+            }
+            .text {
+                width: 80%;
+                position: relative;
+                left: -30px;
+                
+            }
+            .foot{
+                width: 100%;
+            }
+            .next{
+                height: 70vh;
+                width: 100%;
+            }
+            .wrd h4,p {
                 position: relative;
                 /* top: 120px; */
             }
             body {
-                overflow-x: hidden;
+                /* overflow-x: hidden; */
                 /* overflow-y: hidden; */
             }
             nav{
@@ -199,9 +243,10 @@
                 position: relative;
                 left: -881px;
                 top: -100px;
+                width: 20%;
                 z-index:-1;
             }
-           
+      
             h1,h4 {
             color: #001dd7;
             font-size: 35px;
@@ -211,23 +256,39 @@
             left: -40px;
             position: relative;
         }
-        .des > h3 {
-            width: 154px;
-        }
+        /* .des > h3,p {
+            width: 144px;
+            position: relative;
+            right: 40px;
+        } */
         .three > .des {
             left: -34px;
             /* top:180px; */
             position: relative;
         }
+        .foot {
+            position: relative;
+            top: 150px;
+        }
         .watch{
             position: relative;
             left: 0px;
             top: 50px;
-            width: 410px;
+            width: 95%;
+        }
+        .head1, #head1{
+            position: relative;
+            left: 80px;
+            width: 100%;
+        }
+        .head2, #head2{
+            position: relative;
+            right: 60px;
+            width:100%;
         }
         #three, #four{
             position: relative;
-            left: 120px;
+            /* left: 120px; */
             top: 40px;
         }
         #four {
@@ -238,21 +299,52 @@
             position: relative;
             left: 110px;
         }
-        .one, .two, .three, .four {
-        width: 150px;
-    }
+        .one, .three {
+            position: relative;
+            top: -110px;
+        }
+        .one {
+            position: relative;
+            left: 60px;
+            width: 40%;
+        }
+        .three {
+            position: relative;
+            left: -12px;
+            width: 40%;
+        }
     .two {
         display: none;
+    }
+    .burger {
+        display: block;
+        position: relative;
+        left: 0px;
+    }
+    body {
+        /* position: absolute; */
+    }
+    .img {
+        display: none;
+    }
+    .hero {
+        width: 400PX;
+        background-color: green;
+        height: 90%;
     }
     }
     </style>
 </head>
 <body>
+    <div class="burger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
     <nav>
         <div class="logo">
             Watch <span>Sales</span>
         </div>
         <ul>
+            
             <li>Home</li>
             <li>Features</li>
             <li>Projects</li>
@@ -272,7 +364,7 @@
             <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
         </div>
         <div class="img">
-            <img src="watchpoint.png" alt="">
+            <img class="hero" src="watchpoint.png" alt="">
         </div>
     </div>
     <div class="next">
@@ -288,8 +380,8 @@
                 <i class="fa-regular fa-gem"></i>
 
                 <div class="des">
-                    <h3>Attractive Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    <h3 class="head2">Attractive Design</h3>
+                    <p id="head2">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Omnis doloremque, animi reprehenderit veniam quas
                         natus?</p>
                 </div>
@@ -308,8 +400,8 @@
 
                 <i class="fa-sharp fa-solid fa-shield-check"></i>
                 <div class="des">
-                    <h3>Lifetime Guard</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    <h3 class="head1">Lifetime Guard</h3>
+                    <p id="head1">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. Omnis doloremque, animi reprehenderit veniam quas
                     natus?</p>
                 </div>
@@ -340,4 +432,5 @@
     </div>
     <script src="https://kit.fontawesome.com/9da17deac8.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
